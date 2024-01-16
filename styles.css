@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .carta {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFEC;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .mensaje {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 17px;
+    display: none;
+    text-align: justify;
+  }
+  
+  .foto-Caro {
+    max-width: 100%;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .sobre {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .h1 {
+    font-size: 30px;
+    color: #881d8b;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  @keyframes cambioColor {
+    0% {
+      color: #881d8b;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: rgb(122, 4, 29);
+    }
+  }
+  
+  h1 {
+    animation: cambioColor 5s infinite;
+  }
+  
+  .foto-Caro {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+  }
+  
