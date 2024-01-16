@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <style>
+        body {
+            background-color: #000000; /* Fondo rosa */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .carta {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFEC;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .mensaje {
+            font-size: 24px;
+            color: #000000; /* Color rosa oscuro para el texto */
+            margin-bottom: 17px;
+            display: none; /* Ocultar el mensaje inicial */
+            text-align: justify;
+        }
+
+        .foto-Caro {
+            max-width: 100%;
+            border-radius: 10px;
+            display: none; /* Ocultar la foto inicial */
+        }
+
+        .sobre {
+            font-size: 40px;
+            cursor: pointer; /* Cambia el cursor a mano al pasar el mouse */
+        }
+
+        .h1 {
+            font-size: 30px;
+            color: #881d8b; /* Color amarillo oscuro para el texto */
+            margin-bottom: 25px;
+            text-align: center;
+        
+        }
+
+@keyframes cambioColor {
+      0% {
+        color: #881d8b;
+      }
+      50% {
+        color: blue;
+      }
+      100% {
+        color: rgb(122, 4, 29);
+      }
+    }
+
+    h1 {
+      animation: cambioColor 5s infinite; /* Cambia el tiempo y la iteración según sea necesario */
+    }
+
+        .foto-Caro {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <div class="sobre" onclick="abrirCarta()">&#128137;</div> <!-- Icono de sobre -->
+        <div class="mensaje" id="mensaje">
+            <h1 class="h1">Mujer,</h1>
+            <p>Te conocí en un día cualquiera, desde allí me comenzaste a cautivar, digamos que subir al 7 norte cada vez se volvía en un reto que quería hacer. Poco a poco al verte me llamabas la atención más, hasta llegar al punto de pedirte tu número, porque sabía que en algún momento te marcharías y no volvería a saber de ti.</p>
+            <p>Admiro tu dedicación al trabajo y tu manera de superarte, una muestra clara de tu nobleza y valores. Tus ojos, dos destellos que cuentan historias, tu sonrisa, un arco iris que ilumina mis días grises.</p>
+            <p>Espero poder conocer cada día más de ti, simplemente me pareces fascinante y quiero arriesgar todo, sólo por conocer ese gran corazón; Y sé con gran certeza, qué mereces lo mejor de este mundo.</p>
+
+        <img src="https://i.ibb.co/frbCnKS/Dise-o-sin-t-tulo-removebg-preview.png" class="foto-Caro" alt="Imagen de Caro"> 
+        <strong><p>Con mucho cariño</p></strong>
+        <strong><p>Alí David <3</p></strong>
+        </div>
+    </div>
+
+    <script>
+        function abrirCarta() {
+            var mensaje = document.getElementById("mensaje");
+            var foto = document.querySelector(".foto-Caro");
+            var sobre = document.querySelector(".sobre");
+
+            // Mostrar el mensaje y la foto al hacer clic en el sobre
+            mensaje.style.display = "block";
+            foto.style.display = "block";
+            sobre.style.display = "none"; // Ocultar el sobre
+        }
+    </script>
+</body>
+</html>
+
